@@ -10,5 +10,5 @@ eureka:
 
 springcloud-provider-dept:
   ribbon:
-#    NFLoadBalancerRuleClassName: com.kuang.config.ConfigBean
+#    NFLoadBalancerRuleClassName: com.kuang.config.CustomRule
       NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #定义客户端访问相应服务的负载均衡策略,可以是自己新写的策略
